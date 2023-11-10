@@ -11,10 +11,13 @@ console.log(`età del passeggero: ${passengerAge} - lunghezza del tragitto: ${tr
 
 let travelPrice = travelDistance * 0.21
 
+document.getElementById('initial-price').innerHTML = `${travelPrice}€`
+
 console.log(`Prezzo del viaggio senza sconti: ${travelPrice}€`)
 
 /*? applicare sconto del 20% se <18 anni */
 /*? applicare sconto del 40% se >65 anni */
+/* colcolare il prezzo totale del viaggio con eventuali sconti applicati */
 if (passengerAge < 18){
     travelPrice = (travelDistance * 0.21) * 0.8
 } else if (passengerAge > 65){
@@ -23,6 +26,11 @@ if (passengerAge < 18){
     travelPrice = travelDistance * 0.21
 }
 
-/* colcolare il prezzo totale del viaggio */
+
+console.log(`Prezzo del viaggio CON sconti: ${travelPrice}€`)
+
+document.getElementById('final-price').innerHTML = `${travelPrice}€`
+
+
 
 /* mostrare sul schermo il prezzo eventualmente scontato con soli 2 decimali */
