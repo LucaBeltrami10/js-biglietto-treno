@@ -28,8 +28,9 @@ if (passengerAge < 18){
 
 
 console.log(`Prezzo del viaggio CON sconti: ${travelPrice}€`)
+console.log(`Prezzo del viaggio CON sconti e arrotondato a 2 decimali: ${parseFloat(travelPrice).toFixed(2)}€`)
 
-document.getElementById('final-price').innerHTML = `${travelPrice}€`
+document.getElementById('final-price').innerHTML = `${parseFloat(travelPrice).toFixed(2)}€`
 
 
 
