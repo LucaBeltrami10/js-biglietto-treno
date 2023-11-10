@@ -1,9 +1,10 @@
 /* richiedere all'utente l'età del passeggero */
 const passengerAge = parseInt(prompt('Inserire età del Passeggero'));
+document.getElementById('passenger-age').innerHTML = `${passengerAge}€`
 
 /* richiedere all'utente il numero di km da percorrere */
 const travelDistance = parseInt(prompt('Inserire il numero di Chilometri del viaggio'))
-
+document.getElementById('travel-distance').innerHTML = `${travelDistance}€`
 
 console.log(`età del passeggero: ${passengerAge} - lunghezza del tragitto: ${travelDistance} `)
 
@@ -11,7 +12,7 @@ console.log(`età del passeggero: ${passengerAge} - lunghezza del tragitto: ${tr
 
 let travelPrice = travelDistance * 0.21
 
-document.getElementById('initial-price').innerHTML = `${travelPrice}€`
+document.getElementById('initial-price').innerHTML = `${parseFloat(travelPrice).toFixed(2)}€`
 
 console.log(`Prezzo del viaggio senza sconti: ${travelPrice}€`)
 
@@ -26,12 +27,11 @@ if (passengerAge < 18){
     travelPrice = travelDistance * 0.21
 }
 
-
 console.log(`Prezzo del viaggio CON sconti: ${travelPrice}€`)
 console.log(`Prezzo del viaggio CON sconti e arrotondato a 2 decimali: ${parseFloat(travelPrice).toFixed(2)}€`)
 
+
+/* mostrare sul schermo il prezzo eventualmente scontato con soli 2 decimali */
 document.getElementById('final-price').innerHTML = `${parseFloat(travelPrice).toFixed(2)}€`
 
 
-
-/* mostrare sul schermo il prezzo eventualmente scontato con soli 2 decimali */
