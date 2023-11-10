@@ -4,6 +4,8 @@ const passengerAge = parseInt(prompt('Inserire età del Passeggero'));
 /* richiedere all'utente il numero di km da percorrere */
 const travelDistance = parseInt(prompt('Inserire chilometri del viaggio'))
 
+
+console.log(`età del passeggero: ${passengerAge} - lunghezza del tragitto: ${travelDistance} `)
 /* colcolare il prezzo totale del viaggio */
     /*? calcolare prezzo viaggio in base ai km */
     /*? applicare sconto del 20% se <18 anni */
