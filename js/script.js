@@ -23,8 +23,6 @@ if (passengerAge < 18){
     travelPrice = (travelDistance * 0.21) * 0.8
 } else if (passengerAge > 65){
     travelPrice = (travelDistance * 0.21) * 0.6
-} else {
-    travelPrice = travelDistance * 0.21
 }
 
 console.log(`Prezzo del viaggio CON sconti: ${travelPrice}€`)
