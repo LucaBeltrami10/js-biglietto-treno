@@ -3,7 +3,7 @@ const passengerAge = parseInt(prompt('Inserire età del Passeggero'));
 document.getElementById('passenger-age').innerHTML = `${passengerAge}€`
 
 /* richiedere all'utente il numero di km da percorrere */
-const travelDistance = parseInt(prompt('Inserire il numero di Chilometri del viaggio'))
+const travelDistance = parseFloat(prompt('Inserire il numero di Chilometri del viaggio'))
 document.getElementById('travel-distance').innerHTML = `${travelDistance}€`
 
 console.log(`età del passeggero: ${passengerAge} - lunghezza del tragitto: ${travelDistance} `)
